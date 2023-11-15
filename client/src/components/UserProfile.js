@@ -11,7 +11,7 @@ import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const UserProfile = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading,logout } = useAuth0();
   const [userShops, setUserShops] = useState([]);
 
   useEffect(() => {
@@ -52,6 +52,7 @@ const UserProfile = () => {
             <Col md={6}>
               <Typography variant='h4'>Name: {user.nickname}</Typography>
               <Typography variant='h5'>Mail Id: {user.email}</Typography>
+              <Button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</Button>
             </Col>
           </Row>
 
@@ -64,8 +65,8 @@ const UserProfile = () => {
                   <CardMedia sx={{ height: 200 }} image={shop.image} />
                   <CardContent>
                     <CardActions>
-                      <Button size='small' color='white'>
-                        <Link to={`/createItems?shopId=${shop._id}`} color='white'>
+                      <Button size='small' >
+                        <Link to={`/createItems?shopId=${shop._id}`} style={{color:'white'}}>
                           Add Item
                         </Link>
                       </Button>

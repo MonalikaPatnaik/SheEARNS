@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Meta from "../components/Meta";
 import BreadCrumb from "../components/BreadCrumb";
@@ -57,6 +57,7 @@ const CreateStore = () => {
 
 
       console.log("Store created:", response.data);
+      window.location.href = '/';
     } catch (error) {
 
       console.error("Error creating store:", error);

@@ -29,7 +29,6 @@
 .Shops{
   justify-content: center;
   align-items: center;
-  height:500px;
   text-align: center;
   cursor:pointer;
   /* width:20%; */
@@ -819,4 +818,21 @@ footer .input-group-text {
 .chatContainer{
     background-color: #d7a9eb;
     
+}
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c660f3; /* Set the color of the scrollbar handle */
+  border-radius: 6px; /* Set the border radius of the scrollbar handle */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the color of the scrollbar track */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background-color: #fff; /* Set the color of the scrollbar corner (if needed) */
 }

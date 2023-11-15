@@ -17,7 +17,7 @@ const CreateItem = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const shopId = searchParams.get('shopId');
-
+  
   const handleChange = (e) => {
     const { name, value, files } = e.target;
   
@@ -56,6 +56,7 @@ const CreateItem = () => {
 
 
       console.log("Item added:", response.data);
+      window.location.href = '/';
     } catch (error) {
 
       console.error("Error adding item:", error);
