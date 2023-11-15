@@ -14,7 +14,6 @@ import CreateItem from "./pages/CreateItem";
 import Wishlist from "./pages/Wishlist";
 
 import UserProfile from "./components/UserProfile"
-import Forgotpassword from "./pages/Forgotpassword";
 
 import SingleBlog from "./pages/SingleBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -25,7 +24,6 @@ import SingleProduct from "./pages/SingleProduct";
 import Checkout from "./pages/Checkout";
 import Blog from "./pages/Blogs"
 import SpecialProduct from "./components/SpecialProduct";
-import Landing from "./pages/Landing";
 
 import CreateStore from "./pages/CreateStore";
 import Chat from "./pages/Chat";
@@ -35,8 +33,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-        <Route path="/home" index element={<Landing/>}/>
-        
+ 
           <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>}/>
             <Route path="about" element={<About/>}/>
@@ -59,8 +56,6 @@ function App() {
             
             <Route path="wishlist" element={<Wishlist />} />
            
-            <Route path="forgot-password" element={<Forgotpassword />} />
-          
             <Route path="createStore" element={<CreateStore/>} />
             <Route path="account" element={<UserProfile/>} />
             <Route path="privacy-policy" element={<PrivacyPolicy />} />

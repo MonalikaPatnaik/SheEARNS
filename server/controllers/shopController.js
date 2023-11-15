@@ -66,14 +66,7 @@ exports.createItems=catchAsyncErrors(async(req,res,next)=>
     {
         return next(new ErrorHandler("Shop Not Found",404))
     }
-    // const{name,price,availability,Stock}=req.body;
-    // shop.items.push({name:name,price:price,availability:availability,Stock:Stock});
-    // await shop.save();
-    // const items=shop.items;
-    // res.status(200).json({
-    //     success:true,
-    //     items
-    // })
+
     try {
         console.log("Request body:", req.body);
         console.log("Before Cloudinary upload"); 

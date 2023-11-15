@@ -25,9 +25,9 @@ const UserProfile = () => {
       }
     };
 
-    // Fetch user shops when the component mounts
+   
     fetchUserShops();
-  }, [user.email]); // Empty dependency array to run the effect only once
+  }, [user.email]);
 
   // Check if authentication is in progress
   if (isLoading) {
@@ -57,9 +57,9 @@ const UserProfile = () => {
 
           <div className='Shops'>
             <h1>My Shops</h1>
-            <div className='items'>
+            <div className='row'>
               {userShops.map((shop) => (
-                <Card key={shop._id} sx={{ maxWidth: 345 }}>
+                <Card key={shop._id} sx={{ maxWidth: 345,margin:5 }}>
                   <CardHeader title={shop.name} />
                   <CardMedia sx={{ height: 200 }} image={shop.image} />
                   <CardContent>

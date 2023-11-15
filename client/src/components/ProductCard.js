@@ -75,7 +75,8 @@ items.map(item=>(
             <h6 className="brand">{item.name}</h6>
             <h5 className="product-title">
           
-           Stock={item.stock}
+            Stock={item.stock !== undefined ? item.stock : 0}
+
             </h5>
             <ReactStars
               count={5}
@@ -91,7 +92,7 @@ items.map(item=>(
               provident, similique sunt...
             
             </p>
-            <p className="price">Rs{item.price}</p>
+            <p className="price">Rs{item.price !== undefined ? item.price : 0}</p>
             <button className="buyButton button" onClick={Buy}>Buy</button>
           </div>
           <div className="action-bar position-absolute">

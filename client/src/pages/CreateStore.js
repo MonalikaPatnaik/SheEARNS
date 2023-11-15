@@ -6,13 +6,13 @@ import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
 import { useAuth0 } from "@auth0/auth0-react";
 const CreateStore = () => {
-  // State to manage form data
+
   const [formData, setFormData] = useState({
     name: "",
     category: "",
-    image: null, // Use null for the file
+    image: null, 
   });
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, loginWithRedirect } = useAuth0();
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -21,7 +21,7 @@ const CreateStore = () => {
       const newData = { ...prevData };
   
       if (name === "image" && files && files.length > 0) {
-        // Don't set the value directly for file input
+
         newData[name] = files[0];
       } else {
         newData[name] = value;
@@ -32,11 +32,16 @@ const CreateStore = () => {
     });
   };
   
-  
-
   // Event handler for form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!isAuthenticated) {
+      // Redirect to login page if not authenticated
+      loginWithRedirect();
+      return;
+    }
+
     console.log("Form submitted");
  
     const formDataForBackend = new FormData();
@@ -47,13 +52,13 @@ const CreateStore = () => {
 
     console.log("Form Data:", formDataForBackend);
     try {
-      // Make a POST request to your backend API endpoint
+
       const response = await axios.post("http://localhost:4000/api/v1/createShop", formDataForBackend);
 
-      // Handle the response as needed
+
       console.log("Store created:", response.data);
     } catch (error) {
-      // Handle errors
+
       console.error("Error creating store:", error);
     }
     console.log("After Axios request");

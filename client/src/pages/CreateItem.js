@@ -51,13 +51,13 @@ const CreateItem = () => {
 
     console.log("Form Data:", formDataForBackend);
     try {
-      // Make a POST request to your backend API endpoint
+
       const response = await axios.post(`http://localhost:4000/api/v1/createItems?shopId=${shopId}`, formDataForBackend);
 
-      // Handle the response as needed
+
       console.log("Item added:", response.data);
     } catch (error) {
-      // Handle errors
+
       console.error("Error adding item:", error);
     }
     console.log("After Axios request");

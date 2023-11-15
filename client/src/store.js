@@ -3,12 +3,10 @@ import thunk from "redux-thunk";
 import {composeWithDevTools} from "redux-devtools-extension";
 import {configureStore} from "@reduxjs/toolkit";
 import { shopReducer } from "./reducers/shopReducer";
-import { userReducer } from "./reducers/userReducer";
 import { itemReducer } from "./reducers/itemReducer";
 
 const reducer=combineReducers({
     shops:shopReducer,
-    user:userReducer,
     items:itemReducer
 });
 let initialState={};
