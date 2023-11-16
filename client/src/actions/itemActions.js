@@ -6,7 +6,8 @@ export const getItems=(id)=> async(dispatch)=>{
         dispatch({
             type:ALL_ITEM_REQUEST
         })
-        const {data}=await axios.get(`https://sheearns.onrender.com/items/${id}`);
+        const baseURL = process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : 'https://sheearns.onrender.com';
+        const {data}=await axios.get(`${baseURL}/items/${id}`);
         console.log("got"+data);
 
         dispatch({

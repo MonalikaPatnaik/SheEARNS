@@ -40,7 +40,7 @@ const Header = () => {
             </div>
             <div className="col-5">
               <div className="input-group form-Container">
-                <input type="text" placeholder="Search" class="form-control" onChange={(e)=>setKeyword(e.target.value)}/>
+                <input type="text" placeholder="Search" className="form-control" onChange={(e)=>setKeyword(e.target.value)}/>
                 <span className="input-group-btn">
                    <button className="btn btn-search" onClick={filter}>
                       <img src={search} width="40"/>
@@ -112,7 +112,7 @@ const Header = () => {
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/openStore">Open Store</NavLink>
                     <div className="input-group form-Container">
-                <input type="text" placeholder="Search by location" class="form-control" />
+                <input type="text" placeholder="Search by location" className="form-control" />
                 <span className="input-group-btn">
                    <button className="btn btn-search" >
                       <img src={location} width="40"/>

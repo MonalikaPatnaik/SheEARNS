@@ -21,7 +21,7 @@ const SpecialProduct = () => {
     <div className="row">
          {shops &&
          shops.map(shop=>(
-          <div className="col-6 mb-3">
+          <div key={shop._id} className="col-6 mb-3">
           <div className="special-product-card">
           <div className="d-flex justify-content-between">
             <div className="prod-image">
@@ -45,17 +45,7 @@ const SpecialProduct = () => {
               </div>
               <div className="prod-count my-3">
                 <p>{shop.category}</p>
-               {/* <p>{shop.location}</p> */}
-                {/* <div className="progress">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    style={{ width: "25%" }}
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div> */}
+                
               </div>
            <Link to={`/items/${shop._id}`} className="button">View Shop</Link>
             </div>

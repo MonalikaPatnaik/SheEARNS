@@ -26,7 +26,7 @@ import Blog from "./pages/Blogs"
 import SpecialProduct from "./components/SpecialProduct";
 
 import CreateStore from "./pages/CreateStore";
-import Chat from "./pages/Chat";
+
 
 function App() {
   return (
@@ -39,7 +39,6 @@ function App() {
             <Route path="about" element={<About/>}/>
             <Route path="/shops/:keyword" element={<SpecialProduct/>}/>
             <Route path="/shops/:location" element={<SpecialProduct/>}/>
-            <Route path="chatScreen" element={<Chat/>}/>
 
             <Route path="contact" element={<Contact/>}/>
             <Route path="openStore" element={<OpenStore/>}/>

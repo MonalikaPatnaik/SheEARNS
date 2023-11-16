@@ -18,7 +18,8 @@ const UserProfile = () => {
     const fetchUserShops = async () => {
       try {
         // Make a GET request to fetch user shops from the backend
-        const response = await axios.get(`http://localhost:4000/api/v1/shops/user?user=${user.email}`);
+        const baseURL = process.env.NODE_ENV === 'development' ? 'http://localhost:4000' : 'https://sheearns.onrender.com';
+        const response = await axios.get(`${baseURL}/shops/user?user=${user.email}`);
         setUserShops(response.data.shops);
       } catch (error) {
         console.error('Error fetching user shops:', error);
