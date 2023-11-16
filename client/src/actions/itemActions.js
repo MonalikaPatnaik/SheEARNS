@@ -6,7 +6,7 @@ export const getItems=(id)=> async(dispatch)=>{
         dispatch({
             type:ALL_ITEM_REQUEST
         })
-        const {data}=await axios.get(`/api/v1/items/${id}`);
+        const {data}=await axios.get(`https://sheearns.onrender.com/items/${id}`);
         console.log("got"+data);
 
         dispatch({

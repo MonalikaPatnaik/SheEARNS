@@ -15,7 +15,7 @@ app.use(fileUpload({
     useTempFiles:true
 }))
 // app.use("/api/v1",user);
-app.use("/api/v1",cors(),shop);
+app.use(shop);
 
 app.use(errorMiddleware);
 

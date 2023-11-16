@@ -52,7 +52,7 @@ const CreateItem = () => {
     console.log("Form Data:", formDataForBackend);
     try {
 
-      const response = await axios.post(`http://localhost:4000/api/v1/createItems?shopId=${shopId}`, formDataForBackend);
+      const response = await axios.post(`https://sheearns.onrender.com/createItems?shopId=${shopId}`, formDataForBackend);
 
 
       console.log("Item added:", response.data);

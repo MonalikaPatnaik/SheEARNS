@@ -53,7 +53,7 @@ const CreateStore = () => {
     console.log("Form Data:", formDataForBackend);
     try {
 
-      const response = await axios.post("http://localhost:4000/api/v1/createShop", formDataForBackend);
+      const response = await axios.post("https://sheearns.onrender.com/createShop", formDataForBackend);
 
 
       console.log("Store created:", response.data);

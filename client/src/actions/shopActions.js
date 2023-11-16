@@ -7,7 +7,7 @@ export const getShop = (keyword = " ") => async (dispatch) => {
       type: ALL_SHOP_REQUEST,
     });
 
-    const response = await axios.get(`http://localhost:4000/api/v1/shops?keyword=${keyword}`);
+    const response = await axios.get(`https://sheearns.onrender.com/shops?keyword=${keyword}`);
     console.log(response);
 
     dispatch({
