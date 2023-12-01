@@ -26,20 +26,6 @@ SheEarns is a web application dedicated to giving exposure to small local busine
 
 4. **Connect with Customers**: SheEarns enables direct interaction between business owners and customers, fostering a sense of community and personalized engagement.
 
-## Getting Started
-
-To get started with SheEarns, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/MonalikaPatnaik/sheEarns.git
-
-   
-Certainly! Below is a template for a README.md file for your project named "SheEarns." Feel free to customize it further based on your specific project details.
-
-markdown
-Copy code
 # SheEarns
 
 ## Overview
