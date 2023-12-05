@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Describe the feature.**
-A clear and concise description of your new feature.
+<!--A clear and concise description of your new feature.-->
 
 **Add Screenshots**
-Add sufficient SS to propose your feature.
+<!--Add sufficient SS to propose your feature.-->
