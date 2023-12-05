@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-** What's the style idea? **
-We need to improve....
+**What's the style idea?**
+<!--We need to improve....-->
 
-** Add Screenshots**
-Add screenshots to show the demo
+**Add Screenshots**
+<!--Add screenshots to show the demo-->
