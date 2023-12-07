@@ -74,7 +74,7 @@ const CreateStore = () => {
         <div className="row">
           <div className="col-12">
             <div className="auth-card">
-              <h3 className="text-center mb-3">Create Store</h3>
+              <h4 className=" d-flex text-align-center justify-content-center">Create store!</h4>
               <form onSubmit={handleSubmit} className="d-flex flex-column gap-15">
                 <CustomInput
                   type="text"
