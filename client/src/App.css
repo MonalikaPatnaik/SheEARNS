@@ -844,3 +844,21 @@ footer .input-group-text {
   border-width: 2px;
   border-radius: 10px;
 }
+#scroll-btn {       
+  opacity: 0;   
+  width: 40px;
+  height: 40px;
+  color:#eae9ea;
+  background-color:#777777 ;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;    
+  border: 2px solid #fff;
+  border-radius: 60%; 
+  font: bold 20px monospace;       
+  transition: opacity 0.5s, transform 0.5s;
+}
+#scroll-btn.show {      
+  opacity: 1;  
+  transition: opacity 1s, transform 1s;     
+}
