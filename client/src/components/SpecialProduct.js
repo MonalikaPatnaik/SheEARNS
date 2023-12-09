@@ -23,11 +23,11 @@ const SpecialProduct = () => {
           shops.map((shop) => (
             <div key={shop._id} className="col-6 mb-3">
               <div className="special-product-card">
-                <div className="d-flex justify-content-between">
-                  <div className="prod-image">
-                    <img src={shop.image} className="img-fluid" alt="watch" />
+                <div className="row">
+                  <div className="sm-row col-md-5 prod-image">
+                    <img src={shop.image} alt="watch" />
                   </div>
-                  <div className="special-product-content">
+                  <div className="sm-row col-md-7">
                     <h5 className="brand"></h5>
                     <h6 className="title">{shop.name}</h6>
                     <ReactStars
