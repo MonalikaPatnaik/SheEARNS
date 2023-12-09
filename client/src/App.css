@@ -836,3 +836,24 @@ footer .input-group-text {
 ::-webkit-scrollbar-corner {
   background-color: #fff; /* Set the color of the scrollbar corner (if needed) */
 }
+
+.backToTopBtn{
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  position: static;
+  left: 50px;
+  bottom: 110px;
+  float: right;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Back-toTopBtn{
+  padding: 2px;
+ 
+  
+}
