@@ -5,8 +5,11 @@ import BreadCrumb from "../components/BreadCrumb";
 import Container from "../components/Container";
 import CustomInput from "../components/CustomInput";
 import { useAuth0 } from "@auth0/auth0-react";
+import Loader from "../components/Loader";
 const CreateStore = () => {
 
+  //used to disable button when clicked once in createstore form
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     category: "",
@@ -42,6 +45,8 @@ const CreateStore = () => {
       return;
     }
 
+    setIsButtonDisabled(true);
+
     console.log("Form submitted");
  
     const formDataForBackend = new FormData();
@@ -55,10 +60,13 @@ const CreateStore = () => {
 
       const response = await axios.post("https://sheearns.onrender.com/createShop", formDataForBackend);
 
+      setIsButtonDisabled(false);
 
       console.log("Store created:", response.data);
       window.location.href = '/';
     } catch (error) {
+
+      setIsButtonDisabled(false);
 
       console.error("Error creating store:", error);
     }
@@ -67,6 +75,7 @@ const CreateStore = () => {
 
   return (
     <>
+      {isButtonDisabled && <Loader />}
       <Meta title={"Create Store"} />
       <BreadCrumb title="Create Store" />
 
@@ -99,7 +108,7 @@ const CreateStore = () => {
                 />
                 <div>
                   <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
-                    <button type="submit" className="button border-0">
+                    <button type="submit" className="button border-0" disabled={isButtonDisabled}>
                       Submit
                     </button>
                   </div>
