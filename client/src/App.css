@@ -114,7 +114,7 @@ a {
 
 .button {
   background-color: #5b1c36;
-  color: #d7a9eb;
+  color: white;
   font-size: 14px;
   padding: 14px 30px;
   border-radius: 20px;
@@ -535,8 +535,8 @@ footer .input-group-text {
 }
 .auth-card{
     padding: 10px;
-    background-color: white;
-    width: 500px;
+    background-color:#decaec;
+    width: 800px;
     margin: 30px auto;
     /* margin-top: 5px; */
     border-radius: 10px;
@@ -545,7 +545,7 @@ footer .input-group-text {
 .auth-card h3 {
   font-size: 19px;
   font-weight: 500;
-  color: var(--color-777777);
+  color:#131921;
 }
 .auth-card p {
   font-size: 13px;
@@ -821,6 +821,7 @@ footer .input-group-text {
     background-color: #d7a9eb;
     
 }
+
 ::-webkit-scrollbar {
   width: 12px; /* Set the width of the scrollbar */
 }
@@ -837,4 +838,9 @@ footer .input-group-text {
 /* Corner */
 ::-webkit-scrollbar-corner {
   background-color: #fff; /* Set the color of the scrollbar corner (if needed) */
+}
+.divname{
+  background-color: #270536;
+  border-width: 2px;
+  border-radius: 10px;
 }
