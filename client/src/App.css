@@ -5,17 +5,13 @@
 }
 .profileContainer{
   margin:30px;
- 
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
 }
 .profileContainer Button{
   margin:15px;
   
-}
-.profilePic {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  /* padding: 10px; */
 }
 .profileContainer {
   display: flex;
@@ -23,7 +19,7 @@
 }
 @media only screen and (max-width: 768px) {
   .profileContainer {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .Shops{
