@@ -121,8 +121,8 @@ a {
   /* text-align: center; */
 }
 .button:hover {
-  background-color: #d7a9eb;
-  color: #5b1c36;
+  background-color: #232f3e;
+  color:#e645bb ;
 }
 /* Header Part */
 
@@ -536,7 +536,11 @@ footer .input-group-text {
 .auth-card{
     padding: 10px;
     background-color:#decaec;
-    width: 800px;
+    width: 600px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top:50px;
+    padding-bottom:20px;
     margin: 30px auto;
     /* margin-top: 5px; */
     border-radius: 10px;
@@ -839,8 +843,24 @@ footer .input-group-text {
 ::-webkit-scrollbar-corner {
   background-color: #fff; /* Set the color of the scrollbar corner (if needed) */
 }
-.divname{
-  background-color: #270536;
-  border-width: 2px;
+.divname:hover{
+  background-color: #e645bb;
+  border-spacing: 5px;
   border-radius: 10px;
+}
+
+.Scroll2topBtn{
+  padding: 20px;
+  background-color:#decaec;
+  padding: 10px;
+  text-align: center;
+  position: static;
+  left: 50px;
+  bottom: 110px;
+  float: right;
+  color: #131921;
+  font-size: 20px;
+  font-weight: 400;
+
+
 }

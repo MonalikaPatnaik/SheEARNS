@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
@@ -6,6 +6,14 @@ import { getShop } from "../actions/shopActions";
 import Loader from "./Loader";
 
 const SpecialProduct = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 10,
+      behavior: 'smooth'
+    });
+  }
   const { keyword } = useParams();
   const { location } = useParams();
   const dispatch = useDispatch();
@@ -14,6 +22,18 @@ const SpecialProduct = () => {
   useEffect(() => {
     dispatch(getShop(keyword));
   }, [dispatch]);
+  useEffect(() => {
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowButton(true);
+      }else {
+        setShowButton(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+  },[])
 
   return (
     <>
@@ -50,6 +70,13 @@ const SpecialProduct = () => {
               </div>
             </div>
           ))}
+          <div className="Scroll2top">
+          {showButton && (
+            <button className="Scroll2topBtn" onClick={scrollTop}>
+              Back to Top
+            </button>
+          )}
+          </div>
       </div>
     </>
   );
