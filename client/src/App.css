@@ -116,11 +116,13 @@ a {
   font-size: 14px;
   padding: 13px 33px;
   border-radius: 25px;
+  position : relative;
   /* text-align: center; */
 }
+
 .button:hover {
   background-color: #febd69;
-  color: #131921;
+  color: #efebef;
 }
 /* Header Part */
 
@@ -130,6 +132,8 @@ a {
 } */
 .header-upper {
   background-color: #d7a9eb;
+  position: relative;
+  z-index: 10;
 }
 .header-bottom {
   background-color: #eceef0;
@@ -174,6 +178,8 @@ a {
 
 footer {
   background-color: #d7a9eb;
+  position: relative;
+  z-index: -1;
   /* margin-top: 100px; */
 }
 /* .container-xxl{
@@ -458,6 +464,8 @@ footer .input-group-text {
   border-radius: 15px;
   background-color: #decaec;
   gap: 15px;
+  z-index: 10;
+  position: relative;
 }
 .contact-inner-wrapper > div {
   width: 48%;
