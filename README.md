@@ -58,7 +58,7 @@ To get started with SheEarns, follow these steps:
    ```bash
    npm run dev
 
-7. Now you can access the frontend on your localhost:3000 and backend on localhost:4000     
+7. Now you can access the frontend on your [localhost:3000](http://localhost:3000/) and backend on [localhost:4000](http://localhost:4000/)     
 
  ### Contributing
 We welcome contributions from the community. If you find any issues or have suggestions for improvement, please feel free to submit a pull request. 
