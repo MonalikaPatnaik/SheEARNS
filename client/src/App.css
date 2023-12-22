@@ -91,9 +91,11 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+
 .form-control:focus {
   box-shadow: none;
   border-color: inherit;
+  
 }
 
 .gap-10 {
@@ -111,16 +113,16 @@ a {
 
 
 .button {
-  background-color: #febd69;
-  color: rgb(26, 22, 22);
+  background-color: #5b1c36;
+  color: white;
   font-size: 14px;
-  padding: 13px 33px;
-  border-radius: 25px;
+  padding: 14px 30px;
+  border-radius: 20px;
   /* text-align: center; */
 }
 .button:hover {
-  background-color: #febd69;
-  color: #131921;
+  background-color: #232f3e;
+  color:#e645bb ;
 }
 /* Header Part */
 
@@ -533,8 +535,12 @@ footer .input-group-text {
 }
 .auth-card{
     padding: 10px;
-    background-color: white;
-    width: 500px;
+    background-color:#decaec;
+    width: 600px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top:50px;
+    padding-bottom:20px;
     margin: 30px auto;
     /* margin-top: 5px; */
     border-radius: 10px;
@@ -543,7 +549,7 @@ footer .input-group-text {
 .auth-card h3 {
   font-size: 19px;
   font-weight: 500;
-  color: var(--color-777777);
+  color:#131921;
 }
 .auth-card p {
   font-size: 13px;
@@ -819,6 +825,7 @@ footer .input-group-text {
     background-color: #d7a9eb;
     
 }
+
 ::-webkit-scrollbar {
   width: 12px; /* Set the width of the scrollbar */
 }
@@ -836,3 +843,9 @@ footer .input-group-text {
 ::-webkit-scrollbar-corner {
   background-color: #fff; /* Set the color of the scrollbar corner (if needed) */
 }
+.divname:hover{
+  background-color: #e645bb;
+  border-spacing: 5px;
+  border-radius: 10px;
+}
+

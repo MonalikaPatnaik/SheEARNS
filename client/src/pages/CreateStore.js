@@ -82,8 +82,9 @@ const CreateStore = () => {
       <Container class1="login-wrapper py-3 home-wrapper-2">
         <div className="row">
           <div className="col-12">
+            <h3 className=" d-flex text-align-center justify-content-center">Create store!</h3>
             <div className="auth-card">
-              <h3 className="text-center mb-3">Create Store</h3>
+              
               <form onSubmit={handleSubmit} className="d-flex flex-column gap-15">
                 <CustomInput
                   type="text"

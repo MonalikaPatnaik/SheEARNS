@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
@@ -6,6 +6,7 @@ import { getShop } from "../actions/shopActions";
 import Loader from "./Loader";
 
 const SpecialProduct = () => {
+
   const { keyword } = useParams();
   const { location } = useParams();
   const dispatch = useDispatch();
@@ -14,6 +15,7 @@ const SpecialProduct = () => {
   useEffect(() => {
     dispatch(getShop(keyword));
   }, [dispatch]);
+
 
   return (
     <>
@@ -50,6 +52,7 @@ const SpecialProduct = () => {
               </div>
             </div>
           ))}
+
       </div>
     </>
   );
