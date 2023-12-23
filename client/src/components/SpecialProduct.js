@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { getShop } from "../actions/shopActions";
 import Loader from "./Loader";
+import ShopCard from "./ShopCard";
 
 const SpecialProduct = () => {
 
@@ -20,11 +21,13 @@ const SpecialProduct = () => {
   return (
     <>
       {loading && <Loader />}
-      <div className="row">
+      <div   style={{"display":"flex", "flexWrap":"wrap", "justifyContent":"space-between"}}>
         {shops &&
           shops.map((shop) => (
-            <div key={shop._id} className="col-6 mb-3">
-              <div className="special-product-card">
+            
+            <>
+            <ShopCard imgurl={shop.image} title={shop.name} value={4} id={shop._id} category={shop.category}/>
+              {/* <div className="special-product-card">
                 <div className="d-flex justify-content-between">
                   <div className="prod-image">
                     <img src={shop.image} className="img-fluid" alt="watch" />
@@ -49,8 +52,8 @@ const SpecialProduct = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            </>
           ))}
 
       </div>

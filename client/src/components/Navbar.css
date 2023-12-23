@@ -1,0 +1,54 @@
+.nav-flexbox{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh;
+    font-size: 1.3rem;
+    box-shadow: 0 2px 9px 0 #00000080;
+    position: sticky;
+    cursor: pointer;
+}
+.nav-mid{
+    display: flex;
+    align-items: center;
+
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-mid-cont{
+    margin: 0 1vw;
+    color: black;
+    
+}
+.nav-logo{
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c15feb;
+    
+}
+.nav-search{
+    margin-right: 2vh;
+}
+.nav-search-input{
+    font-size: 1.25rem;
+    color: black;
+    border: 1px solid #d7a9eb;
+}
+.nav-search-input:focus{
+    border-color: #c15feb;
+}
+.search-location{
+    margin:0 0 0 5vw;
+    padding: 1vh 1.5vh;
+    border: 2px solid rgb(37, 220, 77);
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1.3rem;
+}
+.search-location:focus{
+    outline: none;
+}
