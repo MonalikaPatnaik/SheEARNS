@@ -33,6 +33,7 @@ const Navbar = () => {
         <NavLink to='/openstore'><p className='nav-mid-cont'>Open Store</p></NavLink>
         <NavLink to='/blogs'><p className='nav-mid-cont'>Our Stories</p></NavLink>
         <NavLink to='/contacts'><p className='nav-mid-cont'>Contact</p></NavLink>
+        <NavLink to='/about'><p className='nav-mid-cont'>About</p></NavLink>
         </div>
         
         <div className='nav-right'>
