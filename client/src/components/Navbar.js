@@ -23,6 +23,7 @@ const Navbar = () => {
     }
 
   }
+  
   return (
     <div>
       <div className='nav-flexbox'>
@@ -50,7 +51,7 @@ const Navbar = () => {
                   className="d-flex align-items-center gap-10 text-dark "
                 >
                   <img src={user} alt="Account" width={40}/>
-                  <p className="mb-0">
+                  <p className="mb-0 nav-mid-cont">
                     My Account
                   </p>
                 </Link>

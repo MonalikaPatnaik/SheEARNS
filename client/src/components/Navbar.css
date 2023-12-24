@@ -23,6 +23,11 @@
     color: black;
     
 }
+.nav-mid-cont:hover{
+    color: #c15feb;
+    transform: scale(1.1);
+    
+}
 .nav-logo{
     margin: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -30,6 +35,9 @@
     font-weight: 600;
     color: #c15feb;
     
+}
+.nav-logo:hover{
+    color: #9a09d8;
 }
 .nav-search{
     margin-right: 2vh;
