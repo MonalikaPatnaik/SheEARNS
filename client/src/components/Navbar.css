@@ -60,3 +60,8 @@
 .search-location:focus{
     outline: none;
 }
+.sheearns-logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Add margin to separate the logo from other elements */
+  }
