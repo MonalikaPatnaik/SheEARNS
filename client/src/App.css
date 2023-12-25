@@ -849,18 +849,8 @@ footer .input-group-text {
   border-radius: 10px;
 }
 
-.Scroll2topBtn{
-  padding: 20px;
-  background-color:#decaec;
-  padding: 10px;
-  text-align: center;
-  position: static;
-  left: 50px;
-  bottom: 110px;
-  float: right;
-  color: #131921;
-  font-size: 20px;
-  font-weight: 400;
-
-
+/* About */
+.about-container{
+  background-color: #decaec;
 }
+
