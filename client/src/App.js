@@ -8,6 +8,7 @@ import Contact from "./pages/Contact"
 import ExploreProducts from "./pages/ExploreProducts";
 import OpenStore from "./pages/OpenStore";
 import CreateItem from "./pages/CreateItem";
+import ErrorPage from "./components/ErrorPage";
 
 
 // import SingleBlog from "./pages/SingleBlog
@@ -64,6 +65,9 @@ function App() {
 
             <Route path="blog/:id" element={<SingleBlog />} />
 
+
+          </Route>
+          <Route path="/*" element={<ErrorPage/>}>
 
           </Route>
         </Routes>
