@@ -5,7 +5,7 @@ import help from '../images/help.png';
 import { NavLink, Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import user from '../images/8.account.png';
-import sheearnsLogo from '../images/sheearns.png';
+import sheearnslogo from '../images/sheearnslogo.png';
 
 const Navbar = () => {
   const [keyword, setKeyword] = useState('');
@@ -23,7 +23,7 @@ const Navbar = () => {
     <div>
       <div className='nav-flexbox'>
         <Link to='./'>
-          <img src={sheearnsLogo} alt='SheEarns Logo' className='sheearns-logo' />
+          <img src={sheearnslogo} alt='SheEarns Logo' className='sheearns-logo' />
         </Link><Link to='./'>
         <p className='nav-logo'>SheEarns</p>
         </Link>
