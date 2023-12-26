@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vh;
     font-size: 1.3rem;
     box-shadow: 0 2px 9px 0 #00000080;
     position: sticky;
