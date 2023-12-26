@@ -5,7 +5,6 @@
   
 .social_icons a:hover {
    color: #c05093 !important;
-    /* color: #961663 !important; */
     transition: all 0.3s ease-in-out;
     scale: 1.15;
 
