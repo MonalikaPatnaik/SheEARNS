@@ -40,7 +40,7 @@ function App() {
             <Route path="/shops/:keyword" element={<SpecialProduct/>}/>
             <Route path="/shops/:location" element={<SpecialProduct/>}/>
 
-            <Route path="contact" element={<Contact/>}/>
+            <Route path="/contact" element={<Contact/>}/>
             <Route path="openStore" element={<OpenStore/>}/>
 
 

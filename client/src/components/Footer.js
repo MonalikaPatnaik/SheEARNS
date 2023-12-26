@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import newsletter from "../images/newsletter.png";
+import "./Footer.css"
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
                   aria-label="Your Email Address"
                   aria-describedby="basic-addon2"
                 />
-                <span className="input-group-text p-2" id="basic-addon2">
+                <span className="input-group-text p-2 " id="basic-addon2">
                   Subscribe
                 </span>
               </div>
@@ -57,36 +58,36 @@ const Footer = () => {
             <div className="col-3">
               <h4 className="text-dark mb-4">Information</h4>
               <div className="footer-link d-flex flex-column">
-                <Link to="/privacy-policy" className="text-dark py-2 mb-1">
+                <Link to="/privacy-policy" className="contact_links text-dark py-2 mb-1">
                   Privacy Policy
                 </Link>
-                <Link to="/refund-policy" className="text-dark py-2 mb-1">
+                <Link to="/refund-policy" className="contact_links text-dark py-2 mb-1">
                   Refund Policy
                 </Link>
-                <Link to="/shipping-policy" className="text-dark py-2 mb-1">
+                <Link to="/shipping-policy" className="contact_links text-dark py-2 mb-1">
                   Shipping Policy
                 </Link>
-                <Link to="/term-conditions" className="text-dark py-2 mb-1">
+                <Link to="/term-conditions" className="contact_links text-dark py-2 mb-1">
                   Terms & Conditions
                 </Link>
-                <Link className="text-dark py-2 mb-1">Blogs</Link>
+                <Link className="contact_links text-dark py-2 mb-1">Blogs</Link>
               </div>
             </div>
             <div className="col-3">
               <h4 className="text-dark mb-4">Account</h4>
               <div className="footer-link d-flex flex-column">
-                <Link className="text-dark py-2 mb-1">Contact</Link>
-                <Link className="text-dark py-2 mb-1">About Us</Link>
-                <Link className="text-dark py-2 mb-1">Faq</Link>
+                <Link className="contact_links text-dark py-2 mb-1">Contact</Link>
+                <Link className="contact_links text-dark py-2 mb-1">About Us</Link>
+                <Link className="contact_links text-dark py-2 mb-1">Faq</Link>
               </div>
             </div>
             <div className="col-2">
               <h4 className="text-dark mb-4">Quick Links</h4>
               <div className="footer-link d-flex flex-column">
-                <Link className="text-dark py-2 mb-1">Laptops</Link>
-                <Link className="text-dark py-2 mb-1">Headphones</Link>
-                <Link className="text-dark py-2 mb-1">Tablets</Link>
-                <Link className="text-dark py-2 mb-1">Watch</Link>
+                <Link className="contact_links text-dark py-2 mb-1">Laptops</Link>
+                <Link className="contact_links text-dark py-2 mb-1">Headphones</Link>
+                <Link className="contact_links text-dark py-2 mb-1">Tablets</Link>
+                <Link className="contact_links text-dark py-2 mb-1">Watch</Link>
               </div>
             </div>
           </div>

@@ -1,0 +1,25 @@
+.social_icons a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+  
+.social_icons a:hover {
+   color: #c05093 !important;
+    /* color: #961663 !important; */
+    transition: all 0.3s ease-in-out;
+    scale: 1.15;
+
+}
+
+.contact_links:hover{
+    color: #961663 !important;
+    scale: 1.03;
+    margin-left: 7px;
+    transition: all 0.2s ease-in-out;
+}
+
+#basic-addon2:hover{
+    cursor: pointer !important;
+    color: #be87d5 !important;
+}
+  
