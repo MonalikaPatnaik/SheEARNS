@@ -38,7 +38,7 @@ const UserProfile = () => {
   const {email}=user
   useEffect(() => {
     
-    fetch(`http://localhost:4000/getProfile?email=${email}`)
+    fetch(`https://sheearns.onrender.com/getProfile?email=${email}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
