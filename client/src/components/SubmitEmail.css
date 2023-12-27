@@ -1,0 +1,36 @@
+form{
+    display: flex;
+    background-color: white;
+    width: fit-content;
+    align-items: center;
+}
+
+form input{
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    height:50px;
+    width: 600px;
+    font-size: 18px;
+}
+
+form button{
+    background: #a77eb9;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+span{
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
+}
+form button:hover{
+    color: #ffffff;
+}
+
+span #msg{
+    color: black;
+}
