@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import newsletter from "../images/newsletter.png";
 import "./Footer.css"
+import SubmitEmail from './SubmitEmail'
+
+
 
 const Footer = () => {
   return (
@@ -18,16 +21,8 @@ const Footer = () => {
             </div>
             <div className="col-7">
               <div className="input-group">
-                <input
-                  type="text"
-                  className="form-control py-1"
-                  placeholder="Your Email Address"
-                  aria-label="Your Email Address"
-                  aria-describedby="basic-addon2"
-                />
-                <span className="input-group-text p-2 " id="basic-addon2">
-                  Subscribe
-                </span>
+                <SubmitEmail/>
+                <span id="msg"></span>
               </div>
             </div>
           </div>
