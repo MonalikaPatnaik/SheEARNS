@@ -1,5 +1,5 @@
 const express=require("express");
-const { createShop, createItems, items, shops, deleteItem ,userShops } = require("../controllers/shopController");
+const { createShop, createItems, items, shops, deleteItem ,userShops,deleteShop } = require("../controllers/shopController");
 const router=express.Router();
 router.route("/createShop").post(createShop);
 router.route("/createItems").post(createItems);
@@ -7,4 +7,5 @@ router.route("/items/:id").get(items);
 router.route("/shops/user").get(userShops);
 router.route("/deleteItem").put(deleteItem);
 router.route("/shops").get(shops);
+router.route('/deleteShop').put(deleteShop);
 module.exports=router;

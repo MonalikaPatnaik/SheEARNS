@@ -3,6 +3,7 @@ const app=express();
 const cookieParser=require("cookie-parser");
 // const user=require("./routes/userRoute");
 const shop=require("./routes/shopRoute");
+const profile=require("./routes/profileRoute");
 const fileUpload=require('express-fileupload');
 const errorMiddleware=require("./middleware/error");
 const bodyParser=require("body-parser");
@@ -18,6 +19,7 @@ app.use(fileUpload({
 }))
 
 app.use(shop);
+app.use(profile);
 
 app.use(errorMiddleware);
 

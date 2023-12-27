@@ -6,7 +6,7 @@ const ShopCard = (props) => {
     const{imgurl,title,value,id,category}=props;
   return (
    
-      <div className='col-md-3 m-4 rounded mb-20 shadow-lg shadow-blue-gray-400 h-fit'>
+      <div className='shop-box col-md-3 m-4 rounded mb-20 shadow-lg shadow-blue-gray-400 h-fit'>
     
         <img src={imgurl} className='img-fluid rounded-top w-100 ' role="button" />
 

@@ -1,0 +1,123 @@
+.user-img{
+height: 34vh;
+
+border-radius: 50%;
+display: block;
+margin: auto;
+}
+.profile-box{
+    margin: 5vh auto;
+    padding: 2vh;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.409);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+}
+.profile-cont-box{
+    margin: 5vh 5vh;
+    padding: 2vh;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.409);
+    height: fit-content;
+    border-radius: 10px;
+}
+.upload-img-btn{
+    margin: 4vh auto;
+    display: block;
+    border: none;
+    padding:  1.5vh 3vh;
+    border-radius: 5px;
+    background-color: #3c53ea;
+    color: white;
+    box-shadow: 3px 3px 3px rgb(55, 55, 55);
+    font-size: 1.25rem;
+  }
+.upload-img-btn:hover{
+   
+    color: white;
+}
+.upload-img-btn:active{
+    box-shadow: none;
+}
+.user-box{
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    margin: 0 5vh ;
+}
+.input-profile-header{
+    font-size: 1.5rem;
+    margin: 1vh 2vh;
+}
+.input-profile{
+   
+   width: 30vw;
+   padding: 0;
+   border:none;
+   border-bottom:1.5px solid black;
+   margin: 0 1vw;
+   font-size: 1.5rem;
+}
+.input-profile:focus{
+    outline: none;
+    border-color: blue;
+}
+.textarea-profile{
+    width: 36.5vw;
+    padding: 0;
+    margin:  1vh 2vh;
+
+}
+.myshops-header{
+    margin: 3vh;
+    text-align: center;
+}
+.myshop-cards-box{
+    width: 70%;
+    margin: 5vh auto;
+    padding: 2vh;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.409);
+    border-radius: 10px;
+    max-height: 120vh;
+    overflow-y: scroll;
+}
+.myshop-card{
+    width: 99%;
+    margin: 5vh auto;
+    padding: 2vh;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.304);
+    border-radius: 10px;
+   
+}
+.myshop-card-second{
+    display: flex;
+    justify-content: space-between;
+}
+.myshop-img{
+    height:26vh;
+    width: 30vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.myshop-cont{
+    width: 100%;
+}
+.shop-desc{
+    margin: 3vh 0  0 5vh;
+   
+    font-size: 1.25rem;
+
+}
+.icon-profile{
+    float: right;
+    margin: 0 1vh 1vh 1vh;
+    cursor: pointer;
+    height: 5vh;
+
+}
+.icon-profile:hover{
+
+    transform: scale(1.1);
+}
+.shop-add-btn{
+    margin:2vh 0 0 5vh;
+}

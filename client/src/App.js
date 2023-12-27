@@ -9,7 +9,8 @@ import ExploreProducts from "./pages/ExploreProducts";
 import OpenStore from "./pages/OpenStore";
 import CreateItem from "./pages/CreateItem";
 import ErrorPage from "./components/ErrorPage";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // import SingleBlog from "./pages/SingleBlog
 import Wishlist from "./pages/Wishlist";
@@ -72,6 +73,18 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+/>
     </>
   );
 }

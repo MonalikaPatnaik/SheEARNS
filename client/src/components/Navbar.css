@@ -62,5 +62,20 @@
 .sheearns-logo {
     width: 100px; /* Adjust the width as needed */
     height: auto;
-    margin-right: 10px; /* Add margin to separate the logo from other elements */
+    
   }
+  .logout-btn{
+    border: none;
+    padding: 1.1vh 2vh;
+    border-radius: 5px;
+    background-color: #9a09d8;
+    color: white;
+    box-shadow: 3px 3px 3px rgb(55, 55, 55);
+  }
+.logout-btn:hover{
+   
+    color: white;
+}
+.logout-btn:active{
+    box-shadow: none;
+}
