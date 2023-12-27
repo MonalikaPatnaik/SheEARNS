@@ -44,7 +44,7 @@ exports.createShop = catchAsyncErrors(async (req, res, next) => {
                 image: result.url,
             });
 
-            console.log("Shop created:", shop);
+            // console.log("Shop created:", shop);
 
             res.status(200).json({
                 success: true,
@@ -151,6 +151,7 @@ exports.deleteItem=catchAsyncErrors(async(req,res,next)=>{
     const items=shop.items.filter(rev=>rev._id.toString()!=req.query.itemId.toString());
     console.log(items);
     await Shop.findByIdAndUpdate(req.query.shopId,{items},{new:true,runValidators:true,useFindAndModify:false});
+    await Shop.save();
     res.status(200).json({
         success:true,
         message:"Item deleted"
@@ -173,4 +174,13 @@ exports.shops=catchAsyncErrors(async(req,res,next)=>{
         success:true,
         shops
     })
+})
+exports.deleteShop=catchAsyncErrors(async(req,res,next)=>{
+console.log('entered');
+ await Shop.findOneAndDelete({_id:req.query.shopId});
+ await Shop.save();
+ return res.json({
+    message:'Deleted Shop'
+ })
+
 })

@@ -4,12 +4,12 @@ import heart from '../images/heart.png';
 import help from '../images/help.png';
 import { NavLink, Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-import user from '../images/8.account.png';
+import user from '../images/user.png';
 import sheearnslogo from '../images/sheearnslogo.png';
 
 const Navbar = () => {
   const [keyword, setKeyword] = useState('');
-  const { loginWithRedirect, isAuthenticated } = useAuth0();
+  const { loginWithRedirect, isAuthenticated, logout} = useAuth0();
 
   const filter = () => {
     if (keyword.trim()) {
@@ -24,9 +24,10 @@ const Navbar = () => {
       <div className='nav-flexbox'>
         <Link to='./'>
           <img src={sheearnslogo} alt='SheEarns Logo' className='sheearns-logo' />
-        </Link><Link to='./'>
-        <p className='nav-logo'>SheEarns</p>
         </Link>
+        {/* <Link to='./'>
+        <p className='nav-logo'>SheEarns</p>
+        </Link> */}
         <div className='nav-mid'>
           <NavLink to='/'>
             <p className='nav-mid-cont'>Home</p>
@@ -37,7 +38,7 @@ const Navbar = () => {
           <NavLink to='/blogs'>
             <p className='nav-mid-cont'>Our Stories</p>
           </NavLink>
-          <NavLink to='/contacts'>
+          <NavLink to='/contact'>
             <p className='nav-mid-cont'>Contact</p>
           </NavLink>
           <NavLink to='/about'>
@@ -68,8 +69,8 @@ const Navbar = () => {
           {isAuthenticated ? (
             <div>
               <Link to='/account' className='d-flex align-items-center gap-10 text-dark '>
-                <img src={user} alt='Account' width={40} />
-                <p className='mb-0 nav-mid-cont'>My Account</p>
+                <img className=' nav-mid-cont' src={user} alt='Account' width={40} />
+                
               </Link>
             </div>
           ) : (
@@ -87,6 +88,8 @@ const Navbar = () => {
           <p className='nav-mid-cont'>
             <img src={help} width={30} />
           </p>
+          {isAuthenticated&&<><button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })} className='nav-mid-cont logout-btn' >LogOut</button></>}
+          
         </div>
       </div>
     </div>
