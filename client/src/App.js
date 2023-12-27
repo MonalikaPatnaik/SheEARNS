@@ -9,8 +9,13 @@ import ExploreProducts from "./pages/ExploreProducts";
 import OpenStore from "./pages/OpenStore";
 import CreateItem from "./pages/CreateItem";
 import ErrorPage from "./components/ErrorPage";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import FAQ from "./pages/FAQ";
+
+
 
 // import SingleBlog from "./pages/SingleBlog
 import Wishlist from "./pages/Wishlist";
@@ -42,7 +47,7 @@ function App() {
             <Route path="/shops/:keyword" element={<SpecialProduct/>}/>
             <Route path="/shops/:location" element={<SpecialProduct/>}/>
 
-            <Route path="contact" element={<Contact/>}/>
+            <Route path="/contact" element={<Contact/>}/>
             <Route path="openStore" element={<OpenStore/>}/>
 
 
@@ -63,6 +68,10 @@ function App() {
             <Route path="refund-policy" element={<RefundPolicy />} />
             <Route path="shipping-policy" element={<ShippingPolicy />} />
             <Route path="term-conditions" element={<TermAndCondition />} />
+
+            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={<About />} />
+            <Route path="faq" element={<FAQ />} />
 
             <Route path="blog/:id" element={<SingleBlog />} />
 
