@@ -8,6 +8,8 @@ import Contact from "./pages/Contact"
 import ExploreProducts from "./pages/ExploreProducts";
 import OpenStore from "./pages/OpenStore";
 import CreateItem from "./pages/CreateItem";
+import ErrorPage from "./components/ErrorPage";
+import FAQ from "./pages/FAQ";
 
 
 // import SingleBlog from "./pages/SingleBlog
@@ -62,8 +64,15 @@ function App() {
             <Route path="shipping-policy" element={<ShippingPolicy />} />
             <Route path="term-conditions" element={<TermAndCondition />} />
 
+            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={<About />} />
+            <Route path="faq" element={<FAQ />} />
+
             <Route path="blog/:id" element={<SingleBlog />} />
 
+
+          </Route>
+          <Route path="/*" element={<ErrorPage/>}>
 
           </Route>
         </Routes>
