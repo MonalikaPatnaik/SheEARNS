@@ -9,6 +9,8 @@ import ExploreProducts from "./pages/ExploreProducts";
 import OpenStore from "./pages/OpenStore";
 import CreateItem from "./pages/CreateItem";
 import ErrorPage from "./components/ErrorPage";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
