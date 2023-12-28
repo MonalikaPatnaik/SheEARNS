@@ -1,5 +1,5 @@
 .contact-card{
-   background-color: #fff;
+   background-color: #decaec;
    width: 100%;
    border-radius: 10px;
    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -12,7 +12,7 @@
 .contact-header h3{
    display: flex;
    justify-content: center;
-   text-decoration: underline;
+   /* text-decoration: underline; */
 }
 .contact-form{
    display: block;
@@ -21,4 +21,10 @@
 .contact-form form{
    margin: auto;
    background-color: transparent;
+}
+.contact-form form div input{
+   height: 60px;
+}
+.form-control{
+   border: 1px solid black;
 }
