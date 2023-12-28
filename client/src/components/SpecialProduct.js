@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 import { getShop } from "../actions/shopActions";
 import Loader from "./Loader";
 import ShopCard from "./ShopCard";
-
+import { useAuth0 } from '@auth0/auth0-react';
 const SpecialProduct = () => {
 
   const { keyword } = useParams();
@@ -17,16 +17,32 @@ const SpecialProduct = () => {
     dispatch(getShop(keyword));
   }, [dispatch]);
 
+  const { user, isAuthenticated, isLoading } = useAuth0();
+  const [data,setData]=useState();
+    // useEffect(() => {
+      
+    //   fetch(`http://localhost:4000/getWishAll?email=${user.email}`)
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //       console.log(data);
+    //       // setLoading(false);
+    //       // setDetails(data);
+    //       // setContact(data.contact);
+    //       // setAbout(data.about);
+    //       setData(data);
+          
+    //     });
+    // }, []);
 
   return (
     <>
       {loading && <Loader />}
       <div   style={{"display":"flex", "flexWrap":"wrap", "justifyContent":"space-between"}}>
-        {shops &&
+        {shops && 
           shops.map((shop) => (
             
             <>
-            <ShopCard imgurl={shop.image} title={shop.name} value={4} id={shop._id} category={shop.category}/>
+            <ShopCard imgurl={shop.image} title={shop.name} value={4} id={shop._id} category={shop.category} shopWish={data}/>
               {/* <div className="special-product-card">
                 <div className="d-flex justify-content-between">
                   <div className="prod-image">
