@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import './CardBanner.css';
 
+
 class CardBanner extends Component {
   render() {
     const { data } = this.props;
