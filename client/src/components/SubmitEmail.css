@@ -34,3 +34,20 @@ form button:hover{
 span #msg{
     color: black;
 }
+
+
+@media(width < 1240px){
+    form input{
+        padding: 10px 20px;
+        height:50px;
+        width: 500px;
+    }
+}
+
+@media(width < 1078px){
+    form input{
+        padding: 8px 16px;
+        height:50px;
+        width: 300px;
+    }
+}
