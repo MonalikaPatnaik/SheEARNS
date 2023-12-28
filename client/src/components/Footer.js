@@ -1,99 +1,95 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import newsletter from "../images/newsletter.png";
-import "./Footer.css"
-import SubmitEmail from './SubmitEmail'
-
-
+import SubmitEmail from './SubmitEmail';
+import './Footer.css'
 
 const Footer = () => {
   return (
     <>
       <footer className="py-4">
-        <div className="container-xxl">
+        <div className="container">
           <div className="row align-items-center">
-            <div className="col-5">
-              <div className="footer-top-data d-flex gap-30 align-items-center">
-                <img src={newsletter} alt="newsletter" />
+            <div className="col-md-5 mb-md-0 mb-4">
+              <div className="footer-top-data d-flex gap-2 align-items-center">
+                <img src={newsletter} alt="newsletter" className="me-2" />
                 <h2 className="mb-0 text-dark">Sign Up for Newsletter</h2>
               </div>
             </div>
-            <div className="col-7">
+            <div className="col-md-7">
               <div className="input-group">
-                <SubmitEmail/>
+                <SubmitEmail />
                 <span id="msg"></span>
               </div>
             </div>
           </div>
         </div>
       </footer>
-      <footer className="py-4">
-        <div className="container-xxl">
+      <footer className="py-4 text-black">
+        <div className="container">
           <div className="row">
-            <div className="col-4">
-              <h4 className="text-dark mb-4">Contact Us</h4>
-              <div>
-                <div className="social_icons d-flex align-items-center gap-30 mt-4">
-                  <a className="text-white" href="#">
-                    <BsLinkedin className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
-                    <BsInstagram className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
-                    <BsGithub className="fs-4" />
-                  </a>
-                  <a className="text-white" href="#">
-                    <BsYoutube className="fs-4" />
-                  </a>
-                </div>
+            <div className="col-md-4 mb-md-0 mb-4">
+              <h4 className="mb-4">Contact Us</h4>
+              <div className="social_icons d-flex align-items-center gap-2">
+                <a className="text-white" href="#">
+                  <BsLinkedin className="fs-4" />
+                </a>
+                <a className="text-white" href="#">
+                  <BsInstagram className="fs-4" />
+                </a>
+                <a className="text-white" href="#">
+                  <BsGithub className="fs-4" />
+                </a>
+                <a className="text-white" href="#">
+                  <BsYoutube className="fs-4" />
+                </a>
               </div>
             </div>
-            <div className="col-3">
-              <h4 className="text-dark mb-4">Information</h4>
-              <div className="footer-link d-flex flex-column">
-                <Link to="/privacy-policy" className="contact_links text-dark py-2 mb-1">
+            <div className="col-md-3 mb-md-0 mb-4">
+              <h4 className="mb-4">Information</h4>
+              <div className="footer-link" style={{ color: 'black' }}>
+                <Link to="/privacy-policy" className="d-block mb-1" style={{ color: 'black' }}>
                   Privacy Policy
                 </Link>
-                <Link to="/refund-policy" className="contact_links text-dark py-2 mb-1">
+                <Link to="/refund-policy" className="d-block mb-1" style={{ color: 'black' }}>
                   Refund Policy
                 </Link>
-                <Link to="/shipping-policy" className="contact_links text-dark py-2 mb-1">
+                <Link to="/shipping-policy" className=" d-block mb-1" style={{color:'black'}}>
                   Shipping Policy
                 </Link>
-                <Link to="/term-conditions" className="contact_links text-dark py-2 mb-1">
+                <Link to="/term-conditions" className=" d-block mb-1" style={{color:'black'}}>
                   Terms & Conditions
                 </Link>
-                <Link className="contact_links text-dark py-2 mb-1">Blogs</Link>
+                <Link className=" d-block mb-1" style={{color:'black'}}>Blogs</Link>
               </div>
             </div>
-            <div className="col-3">
-              <h4 className="text-dark mb-4">Account</h4>
-              <div className="footer-link d-flex flex-column">
-
-                <Link to="/contact" className="contact_links text-dark py-2 mb-1">Contact</Link>
-                <Link to="/about" className="contact_links text-dark py-2 mb-1">About Us</Link>
-                <Link to="/faq" className="contact_links text-dark py-2 mb-1">Faq</Link>
+            <div className="col-md-3 mb-md-0 mb-4">
+              <h4 className="mb-4">Account</h4>
+              <div className="footer-link">
+                <Link to="/contact" className=" d-block mb-1" style={{color:'black'}}>Contact</Link>
+                <Link to="/about" className=" d-block mb-1" style={{color:'black'}}>About Us</Link>
+                <Link to="/faq" className=" d-block mb-1" style={{color:'black'}}>Faq</Link>
               </div>
             </div>
-            <div className="col-2">
-              <h4 className="text-dark mb-4">Quick Links</h4>
-              <div className="footer-link d-flex flex-column">
-                <Link className="contact_links text-dark py-2 mb-1">Laptops</Link>
-                <Link className="contact_links text-dark py-2 mb-1">Headphones</Link>
-                <Link className="contact_links text-dark py-2 mb-1">Tablets</Link>
-                <Link className="contact_links text-dark py-2 mb-1">Watch</Link>
+            <div className="col-md-2">
+              <h4 className="mb-4">Quick Links</h4>
+              <div className="footer-link">
+                <Link className=" d-block mb-1" style={{color:'black'}}>Laptops</Link>
+                <Link className=" d-block mb-1" style={{color:'black'}}>Headphones</Link>
+                <Link className=" d-block mb-1" style={{color:'black'}}>Tablets</Link>
+                <Link className=" d-block mb-1" style={{color:'black'}}>Watch</Link>
               </div>
             </div>
           </div>
         </div>
       </footer>
-      <footer className="py-4">
-        <div className="container-xxl">
+      <footer className="py-4 text-black">
+        <div className="container">
           <div className="row">
-            <div className="col-12">
-              <p className="text-center mb-0 text-dark">
+            <div className="col-12 text-center">
+              <p className="mb-0">
                 &copy; {new Date().getFullYear()}; Powered by Developer's Corner
               </p>
             </div>
