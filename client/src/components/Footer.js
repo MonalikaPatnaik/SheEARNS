@@ -32,54 +32,54 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-4 mb-md-0 mb-4">
               <h4 className="mb-4">Contact Us</h4>
-              <div className="social_icons d-flex align-items-center gap-2">
+              <div className="social_icons d-flex align-items-center gap-4">
                 <a className="text-white" href="#">
-                  <BsLinkedin className="fs-4" />
+                  <BsLinkedin className="contact_links fs-4" />
                 </a>
                 <a className="text-white" href="#">
-                  <BsInstagram className="fs-4" />
+                  <BsInstagram className="contact_links fs-4" />
                 </a>
                 <a className="text-white" href="#">
-                  <BsGithub className="fs-4" />
+                  <BsGithub className="contact_links fs-4" />
                 </a>
                 <a className="text-white" href="#">
-                  <BsYoutube className="fs-4" />
+                  <BsYoutube className="contact_links fs-4" />
                 </a>
               </div>
             </div>
             <div className="col-md-3 mb-md-0 mb-4">
               <h4 className="mb-4">Information</h4>
               <div className="footer-link" style={{ color: 'black' }}>
-                <Link to="/privacy-policy" className="d-block mb-1" style={{ color: 'black' }}>
+                <Link to="/privacy-policy" className="contact_links d-block mb-4" style={{ color: 'black' }}>
                   Privacy Policy
                 </Link>
-                <Link to="/refund-policy" className="d-block mb-1" style={{ color: 'black' }}>
+                <Link to="/refund-policy" className="contact_links d-block mb-4" style={{ color: 'black' }}>
                   Refund Policy
                 </Link>
-                <Link to="/shipping-policy" className=" d-block mb-1" style={{color:'black'}}>
+                <Link to="/shipping-policy" className="contact_links  d-block mb-4" style={{color:'black'}}>
                   Shipping Policy
                 </Link>
-                <Link to="/term-conditions" className=" d-block mb-1" style={{color:'black'}}>
+                <Link to="/term-conditions" className="contact_links  d-block mb-4" style={{color:'black'}}>
                   Terms & Conditions
                 </Link>
-                <Link className=" d-block mb-1" style={{color:'black'}}>Blogs</Link>
+                <Link className="contact_links d-block mb-1" style={{color:'black'}}>Blogs</Link>
               </div>
             </div>
             <div className="col-md-3 mb-md-0 mb-4">
               <h4 className="mb-4">Account</h4>
               <div className="footer-link">
-                <Link to="/contact" className=" d-block mb-1" style={{color:'black'}}>Contact</Link>
-                <Link to="/about" className=" d-block mb-1" style={{color:'black'}}>About Us</Link>
-                <Link to="/faq" className=" d-block mb-1" style={{color:'black'}}>Faq</Link>
+                <Link to="/contact" className="contact_links d-block mb-4" style={{color:'black'}}>Contact</Link>
+                <Link to="/about" className="contact_links d-block mb-4" style={{color:'black'}}>About Us</Link>
+                <Link to="/faq" className="contact_links d-block mb-4" style={{color:'black'}}>Faq</Link>
               </div>
             </div>
             <div className="col-md-2">
               <h4 className="mb-4">Quick Links</h4>
               <div className="footer-link">
-                <Link className=" d-block mb-1" style={{color:'black'}}>Laptops</Link>
-                <Link className=" d-block mb-1" style={{color:'black'}}>Headphones</Link>
-                <Link className=" d-block mb-1" style={{color:'black'}}>Tablets</Link>
-                <Link className=" d-block mb-1" style={{color:'black'}}>Watch</Link>
+                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Laptops</Link>
+                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Headphones</Link>
+                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Tablets</Link>
+                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Watch</Link>
               </div>
             </div>
           </div>
