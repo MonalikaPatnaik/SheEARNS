@@ -34,6 +34,7 @@ const ShopCard = (props) => {
     {
       setdescr(desc);
     }
+    setWish(true);
     setTimeout(async()=>{
       const res=await fetch(`http://localhost:4000/addWish?email=${user.email}`, {
         method: "POST",
@@ -43,7 +44,7 @@ const ShopCard = (props) => {
       const data=await res.json();
 
       if(data.message=="New Wish created"|| data.message=="Wish Updated")
-      { setWish(true);
+      { 
           toast.success('Added to Wishlist');
           navigate('/wishlist')
       }
