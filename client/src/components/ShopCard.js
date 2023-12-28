@@ -45,7 +45,7 @@ const ShopCard = (props) => {
       if(data.message=="New Wish created"|| data.message=="Wish Updated")
       { setWish(true);
           toast.success('Added to Wishlist');
-          // navigate('/wishlist')
+          navigate('/wishlist')
       }
     },1000)
       
