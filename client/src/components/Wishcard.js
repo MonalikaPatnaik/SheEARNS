@@ -9,7 +9,7 @@ const Wishcard = ({img,name,description,id}) => {
   const navigate=useNavigate();
   const {user}=useAuth0();
   const remove=async()=>{
-    const res = await fetch(`http://localhost:4000/deleteWish?email=${user.email}&shopid=${id}`, {
+    const res = await fetch(`https://sheearns.onrender.com/deleteWish?email=${user.email}&shopid=${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     

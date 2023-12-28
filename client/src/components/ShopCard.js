@@ -36,7 +36,7 @@ const ShopCard = (props) => {
     }
     setWish(true);
     setTimeout(async()=>{
-      const res=await fetch(`http://localhost:4000/addWish?email=${user.email}`, {
+      const res=await fetch(`https://sheearns.onrender.com/addWish?email=${user.email}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body:JSON.stringify({shops:[{name:title,shopid:id,category:category,image:imgurl,description:descr}]})

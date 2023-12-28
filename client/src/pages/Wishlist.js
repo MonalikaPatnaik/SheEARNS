@@ -11,7 +11,7 @@ const Wishlist = () => {
   const [show,setShow]=useState(true);
   useEffect(() => {
     
-    fetch(`http://localhost:4000/getWishAll?email=${user.email}`)
+    fetch(`https://sheearns.onrender.com/getWishAll?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
