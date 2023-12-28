@@ -79,7 +79,7 @@ console.log(id);
     }
     const data = new FormData();
     data.append("file", picture);
-    data.append("upload_preset", "tc3augsj");
+    data.append("upload_preset", "dv6yivx37");
     try {
       let res = await fetch(
         "",

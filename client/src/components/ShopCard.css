@@ -10,4 +10,22 @@
 }
 .shop-box{
     height: fit-content;
+    position: relative;
+}
+.shop-img{
+    width: 100%;
+    height:40vh;
+    
+    z-index: 0;
+}
+.wish-icon-shopcard{
+  z-index: 100;
+  float: right;
+  position: absolute;
+  right: 1vh;
+  width: 2.25rem;
+  top: 1vh;
+  cursor: pointer;
+
+    
 }

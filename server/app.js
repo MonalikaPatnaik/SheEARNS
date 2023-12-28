@@ -4,6 +4,7 @@ const cookieParser=require("cookie-parser");
 // const user=require("./routes/userRoute");
 const shop=require("./routes/shopRoute");
 const profile=require("./routes/profileRoute");
+const wish =require("./routes/wishRoute");
 const fileUpload=require('express-fileupload');
 const errorMiddleware=require("./middleware/error");
 const bodyParser=require("body-parser");
@@ -17,7 +18,7 @@ app.use(cookieParser());
 app.use(fileUpload({
     useTempFiles:true
 }))
-
+app.use(wish);
 app.use(shop);
 app.use(profile);
 

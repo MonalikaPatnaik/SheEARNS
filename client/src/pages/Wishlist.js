@@ -1,85 +1,55 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import Container from "../components/Container";
-
+import Wishcard from "../components/Wishcard";
+import { useAuth0 } from "@auth0/auth0-react";
+import '../components/Wishcard.css'
 const Wishlist = () => {
+  const { user, isAuthenticated, isLoading } = useAuth0();
+  const [data,setData]=useState();
+  const [show,setShow]=useState(true);
+  useEffect(() => {
+    
+    fetch(`http://localhost:4000/getWishAll?email=${user.email}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+       setData(data);
+        
+      });
+  }, []);
+
+
   return (
     <>
       <Meta title={"Wishlist"} />
       <BreadCrumb title="Wishlist" />
-      <Container class1="wishlist-wrapper home-wrapper-2 py-5">
-        <div className="row">
-          <div className="col-3">
-            <div className="wishlist-card position-relative">
-              <img
-                src="images/cross.svg"
-                alt="cross"
-                className="position-absolute cross img-fluid"
-              />
-              <div className="wishlist-card-image">
-                <img
-                  src="images/watch.jpg"
-                  className="img-fluid w-100"
-                  alt="watch"
-                />
-              </div>
-              <div className="py-3 px-3">
-                <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
-                </h5>
-                <h6 className="price">$ 100</h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="wishlist-card position-relative">
-              <img
-                src="images/cross.svg"
-                alt="cross"
-                className="position-absolute cross img-fluid"
-              />
-              <div className="wishlist-card-image">
-                <img
-                  src="images/watch.jpg"
-                  className="img-fluid w-100"
-                  alt="watch"
-                />
-              </div>
-              <div className="py-3 px-3">
-                <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
-                </h5>
-                <h6 className="price">$ 100</h6>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="wishlist-card position-relative">
-              <img
-                src="images/cross.svg"
-                alt="cross"
-                className="position-absolute cross img-fluid"
-              />
-              <div className="wishlist-card-image">
-                <img
-                  src="images/watch.jpg"
-                  className="img-fluid w-100"
-                  alt="watch"
-                />
-              </div>
-              <div className="py-3 px-3">
-                <h5 className="title">
-                  Honor T1 7.0 1 GB RAM 8 GB ROM 7 Inch With Wi-Fi+3G Tablet
-                </h5>
-                <h6 className="price">$ 100</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Container>
+     <h1 className="list-header">Favourites</h1>
+    
+     <h1 style={{'margin':'10vh 0 5vh 10vh'}}>Shops</h1>
+     <input type="search" style={{'margin':'0 7vh'}}/>
+     <div className="wishcard-outer-box">
+     {data && data.shops.map((shop)=>(
+      <Wishcard name={shop.name} img={shop.image} description={shop.description} id={shop.shopid}/>
+     
+     ))}
+     
+   
+    
+     
+     </div>
+     
+    
+     <h1 style={{'margin':'10vh 0 5vh 10vh'}}>Items</h1>
+     <div className="wishcard-outer-box">
+     <h1 style={{'textAlign':'center','margin':'5vh auto', 'color':'red'}}>No Items present</h1>
+     
+     </div>
+
     </>
   );
+     
 };
 
 export default Wishlist;

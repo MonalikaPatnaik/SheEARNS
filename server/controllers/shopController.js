@@ -149,7 +149,7 @@ exports.deleteItem=catchAsyncErrors(async(req,res,next)=>{
 
     }
     const items=shop.items.filter(rev=>rev._id.toString()!=req.query.itemId.toString());
-    console.log(items);
+    // console.log(items);
     await Shop.findByIdAndUpdate(req.query.shopId,{items},{new:true,runValidators:true,useFindAndModify:false});
     await Shop.save();
     res.status(200).json({
@@ -165,7 +165,7 @@ exports.shops=catchAsyncErrors(async(req,res,next)=>{
    
     const apiFeature=new ApiFeatures(Shop.find(),req.query).search().filter();
     const shops= await apiFeature.query;
-    console.log(shops);
+    // console.log(shops);
     if(!shops)
     {
         return next(new ErrorHandler("Shop Not Found",404))

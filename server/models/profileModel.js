@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const shopSchema=new mongoose.Schema({
+const profileSchema=new mongoose.Schema({
   
     user:{
         type:String,
@@ -20,4 +20,4 @@ const shopSchema=new mongoose.Schema({
 
  
 })
-module.exports=mongoose.model("Profile",shopSchema);
+module.exports=mongoose.model("Profile",profileSchema);

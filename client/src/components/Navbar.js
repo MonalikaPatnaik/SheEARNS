@@ -80,11 +80,12 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-          <Link to='/wishlist'>
+          {isAuthenticated &&<Link to='/wishlist'>
             <p className='nav-mid-cont'>
               <img src={heart} width={30} />
             </p>
-          </Link>
+          </Link>}
+          
           <p className='nav-mid-cont'>
             <img src={help} width={30} />
           </p>
