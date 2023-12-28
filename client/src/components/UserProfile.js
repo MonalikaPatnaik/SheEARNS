@@ -38,7 +38,7 @@ const UserProfile = () => {
   const {email}=user
   useEffect(() => {
     
-    fetch(`http://localhost:4000/getProfile?email=${email}`)
+    fetch(`https://sheearns.onrender.com/getProfile?email=${email}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -52,7 +52,7 @@ const UserProfile = () => {
 
 const handleDelete=async(id)=>{
 console.log(id);
-  const res = await fetch(`http://localhost:4000/deleteShop?shopId=${id}`, {
+  const res = await fetch(`https://sheearns.onrender.com/deleteShop?shopId=${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     
@@ -100,7 +100,7 @@ console.log(id);
 
 // console.log(email);
   const handleImage = async (e) => {
-    const res = await fetch("http://localhost:4000/updateProfileImg", {
+    const res = await fetch("https://sheearns.onrender.com/updateProfileImg", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({email,picture }),
@@ -123,7 +123,7 @@ console.log(id);
    }
 
    const handleProfileSave=async()=>{
-    const res= await fetch(`http://localhost:4000/createProfile?email=${email}`,{
+    const res= await fetch(`https://sheearns.onrender.com/createProfile?email=${email}`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json",
