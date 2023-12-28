@@ -11,6 +11,7 @@ const CustomInput = (props) => {
         value={value}
         onChange={onChange}
         className={`form-control ${classname}`}
+        required
       />
     </div>
   );
