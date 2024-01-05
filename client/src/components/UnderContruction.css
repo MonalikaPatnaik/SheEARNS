@@ -1,0 +1,31 @@
+/* UnderConstruction.css */
+
+.under-construction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .smaller-illustration {
+    max-width: 30%; /* Set the maximum width as needed */
+  }
+  
+  .subtitle {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  .witty-text {
+    margin-top: 10px;
+    color: #6c757d; /* Bootstrap's muted text color */
+  }
+  
+  /* Additional styling for responsiveness using Bootstrap classes */
+  @media (max-width: 576px) {
+    .under-construction-container {
+      padding: 10px;
+    }
+  }
+  

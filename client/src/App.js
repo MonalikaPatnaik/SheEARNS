@@ -35,6 +35,10 @@ import Blog from "./pages/Blogs"
 import SpecialProduct from "./components/SpecialProduct";
 
 import CreateStore from "./pages/CreateStore";
+import Laptops from "./components/Laptops";
+import HeadPhones from "./components/HeadPhones";
+import Tablets from "./components/Tablets";
+import Watch from "./components/Watch";
 
 
 function App() {
@@ -74,6 +78,11 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="about" element={<About />} />
             <Route path="faq" element={<FAQ />} />
+
+            <Route path="laptops" element={<Laptops />} />
+            <Route path="headphones" element={<HeadPhones />} />
+            <Route path="tablets" element={<Tablets />} />
+            <Route path="watch" element={<Watch />} />
 
             <Route path="blog/:id" element={<SingleBlog />} />
 
