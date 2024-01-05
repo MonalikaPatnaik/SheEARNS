@@ -76,10 +76,10 @@ const Footer = () => {
             <div className="col-md-2">
               <h4 className="mb-4">Quick Links</h4>
               <div className="footer-link">
-                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Laptops</Link>
-                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Headphones</Link>
-                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Tablets</Link>
-                <Link className="contact_links d-block mb-4" style={{color:'black'}}>Watch</Link>
+                <Link to="/laptops" className="contact_links d-block mb-4" style={{color:'black'}}>Laptops</Link>
+                <Link to="/headphones" className="contact_links d-block mb-4" style={{color:'black'}}>Headphones</Link>
+                <Link to="/tablets" className="contact_links d-block mb-4" style={{color:'black'}}>Tablets</Link>
+                <Link to="/watch" className="contact_links d-block mb-4" style={{color:'black'}}>Watch</Link>
               </div>
             </div>
           </div>
