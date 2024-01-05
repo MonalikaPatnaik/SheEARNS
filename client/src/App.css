@@ -536,11 +536,14 @@ footer .input-group-text {
 
 /* Contact Page */
 .contact-inner-wrapper {
+  background-color: #decaec;
   padding: 30px 20px;
   border-radius: 15px;
   gap: 15px;
 }
-
+.contact-form input:focus, .contact-form textarea:focus{
+  border: 1px solid #e645bb;
+}
 .contact-inner-wrapper>div {
   width: 48%;
 }
@@ -624,28 +627,17 @@ footer .input-group-text {
   margin-top: 200px;
 }
 
-.store-card {
-  background-color: #decaec;
-  border-radius: 10px;
-  width: 600px;
-  margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  margin-bottom: 10px;
-}
-.store-header{
-  margin-top: 10px;
-  /* text-decoration: underline; */
-}
 .auth-card {
   padding: 10px;
-}
-.auth-card form{
-  background-color: #decaec;
-  margin: auto;
-  margin-bottom: 15px;
-}
-.auth-card form input{
-  border: 1px solid black;
+  background-color:#decaec;
+    width: 600px;
+    padding-left: 100px;
+    padding-right:100px;
+    padding-top:50px;
+    padding-bottom:20px;
+    margin: 30px auto;
+    /* margin-top: 5px; */
+    border-radius: 10px;
 }
 
 .auth-card h3 {
@@ -665,6 +657,7 @@ footer .input-group-text {
   color: var(--color-777777);
   font-size: 14px;
   border-radius: 10px;
+  border-color: transparent;
 }
 
 .auth-card a {
