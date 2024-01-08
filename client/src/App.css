@@ -153,6 +153,8 @@ a {
 } */
 .header-upper {
   background-color: #d7a9eb;
+  position: relative;
+  z-index: 10;
 }
 
 .header-bottom {
@@ -204,6 +206,8 @@ a {
 
 footer {
   background-color: #d7a9eb;
+  position: relative;
+  z-index: 0;
   /* margin-top: 100px; */
 }
 
@@ -540,6 +544,8 @@ footer .input-group-text {
   padding: 30px 20px;
   border-radius: 15px;
   gap: 15px;
+  z-index: 10;
+  position: relative;
 }
 .contact-form input:focus, .contact-form textarea:focus{
   border: 1px solid #e645bb;
