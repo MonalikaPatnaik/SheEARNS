@@ -5,8 +5,11 @@
     align-items: center;
     font-size: 1.3rem;
     box-shadow: 0 2px 9px 0 #00000080;
-    position: sticky;
+    position: fixed;
     cursor: pointer;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 .nav-mid{
     display: flex;
