@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div class="container contact-wrapper home-wrapper-2 custom-bg-color my-4">
-        <div class="row align-items-center">
+        <div class="row about align-items-center">
           <div class="col-lg-6 text-center">
             <img src="https://illustrations.popsy.co/fuchsia/digital-nomad.svg" alt="illustration" class="img-fluid" />
           </div>
