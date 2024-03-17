@@ -14,6 +14,7 @@
     "assert": "^2.1.0",
     "axios": "^1.6.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "framer-motion": "^10.16.16",
     "http": "^0.0.1-security",
     "https": "^1.0.0",
