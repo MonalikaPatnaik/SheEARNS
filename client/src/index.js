@@ -9,8 +9,8 @@ import { Provider } from 'react-redux';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Auth0Provider
-    domain="dev-83rczzza30aq7qla.us.auth0.com"
-    clientId="dDsCDONwa8CaQyAYk8NZYwa8mzqHrccX"
+    domain={process.env.DOMAIN}
+    clientId={process.env.CLIENT_ID}
     authorizationParams={{
       redirect_uri: window.location.origin
     }}>
